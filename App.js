@@ -9,8 +9,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-});
+export default class App extends React.Component {
 
+	state = {
+		movies: null,
+	}
+
+	componentDidMount() {
+		this.getMovies()
+	}
 
 
 
