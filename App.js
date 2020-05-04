@@ -1,6 +1,6 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-
+import React from 'react'
+import { StyleSheet, Text, View } from 'react-native'
+import {fetchMovie} from './api'
 
 const styles = StyleSheet.create({
   container: {
@@ -9,6 +9,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+})
+
+
 export default class App extends React.Component {
 
 	state = {
