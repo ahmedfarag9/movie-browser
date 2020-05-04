@@ -5,3 +5,8 @@ const processMovie = movie => ({
 })
 
 
+export const fetchMovie = async () => {
+    const response = await fetch('URL')
+    const {results} = await response.json()
+    return results.map(processMovie)
+}
