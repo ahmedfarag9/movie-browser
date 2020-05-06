@@ -17,7 +17,8 @@ const styles = StyleSheet.create({
 export default class App extends React.Component {
 
 	state = {
-		movies: null,
+		movies: " ",
+		movieName: " ",
 	}
 
 	componentDidMount() {
