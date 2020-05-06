@@ -8,8 +8,17 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+const MainStack = createStackNavigator();
+
+function MyStack() {
+  return (
+	<MainStack.Navigator initialRouteName="SearchPage" screenOptions={{ headerTintColor: '#a41034', headerStyle: { backgroundColor: '#fff'}, }}>
+      <MainStack.Screen name="SearchPage" component={SearchFormScreen} options={{title: 'Search For a Movie',}}/>
+      <MainStack.Screen name="MovieDetails" component={MovieDetailsScreen} options={{title: 'Settings',}} />
+
+    </MainStack.Navigator>
+  );
+}
   },
 })
 
