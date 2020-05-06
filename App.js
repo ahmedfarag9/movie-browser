@@ -4,9 +4,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
+import { Settings } from 'react-native'
+import { func } from 'prop-types';
     backgroundColor: '#fff',
 const MainStack = createStackNavigator();
 
