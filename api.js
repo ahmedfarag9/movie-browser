@@ -1,4 +1,8 @@
 const processMovie = movie => ({
+	name: movie.Title,
+	//year: movie.Year,
+	picture: movie.picture
+})
     name: movie.name,
     year: movie.year,
     picture: movie.picture
