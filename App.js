@@ -4,6 +4,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
+
+//import Ionicons from 'react-native-vector-icons/Ionicons'
 import { Settings } from 'react-native'
 import { func } from 'prop-types';
     backgroundColor: '#fff',
