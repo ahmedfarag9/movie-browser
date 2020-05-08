@@ -28,6 +28,20 @@ function MyTabs() {
 	return (
 		<MainTabs.Navigator initialRouteName="MyStack" tabBarOptions={{ activeTintColor:'#a41034', }}>
 
+			<MainTabs.Screen name="MyStack" component={MyStack} options={{ tabBarLabel: 'Search', tabBarIcon: ({ tintColor,focused }) => (
+				<MaterialCommunityIcons name="shield-search" color={tintColor} size={25} />
+			), }}
+			/>
+
+			<MainTabs.Screen name="SettingsScreen" component={SettingsScreen} options={{ tabBarLabel: 'Settings', tabBarIcon: ({ tintColor,focused }) => (
+				<MaterialCommunityIcons name="settings-helper" color={tintColor} size={25} />
+			), }}
+			/>
+
+		</MainTabs.Navigator>
+	)
+}
+
 
 
 export default class App extends React.Component {
