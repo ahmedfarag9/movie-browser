@@ -22,8 +22,12 @@ function MyStack() {
     </MainStack.Navigator>
   );
 }
-  },
-})
+const MainTabs = createBottomTabNavigator();
+
+function MyTabs() {
+	return (
+		<MainTabs.Navigator initialRouteName="MyStack" tabBarOptions={{ activeTintColor:'#a41034', }}>
+
 
 
 export default class App extends React.Component {
