@@ -47,7 +47,7 @@ function MyTabs() {
 export default class App extends React.Component {
 
 	state = {
-		movies: " ",
+		movies: null,
 		movieName: " ",
 	}
 
