@@ -22,3 +22,11 @@ const styles = StyleSheet.create({
         borderRadius: 3,
     },
 })
+
+export default class SearchForm extends React.Component{
+	state = {
+        movieName: null,
+        isFormValid: false,
+        movies: null,
+        showMovies: false
+    }
