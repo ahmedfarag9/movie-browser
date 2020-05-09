@@ -15,11 +15,7 @@ const styles = StyleSheet.create({
   
 
 export default class SettingsScreen extends React.Component {
-  /*static navigationOptions = {
-    tabBarIcon: ({focused, tintColor}) => (
-      <Ionicons name={`ios-options${focused ? '' : '-outline'}`} size={25} color={tintColor} />
-    ),
-  }*/
+
   render() {
     return (
       <View style={styles.container}>
@@ -28,4 +24,3 @@ export default class SettingsScreen extends React.Component {
     )
   }
 }
-
