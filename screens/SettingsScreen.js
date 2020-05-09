@@ -1,7 +1,6 @@
 import React from 'react'
 import {Button, View, StyleSheet, Text} from 'react-native'
 
-import Ionicons from 'react-native-vector-icons/Ionicons'
 
 
 const styles = StyleSheet.create({
