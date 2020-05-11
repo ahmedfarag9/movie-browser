@@ -54,13 +54,16 @@ export default class App extends React.Component {
 		movieName: " ",
 	}
 
-	componentDidMount() {
+	/*componentDidMount() {
 		this.getMovies()
 	}
 
+	getMovies = async () => {
+		const results = await fetchMovie()
+		this.setState({movies: results})
+	}*/
 
 
-export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
