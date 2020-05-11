@@ -5,7 +5,10 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 
-//import Ionicons from 'react-native-vector-icons/Ionicons'
+
+import SearchFormScreen from './screens/SearchFormScreen'
+import SettingsScreen from './screens/SettingsScreen'
+import MovieDetailsScreen from './screens/MovieDetailsScreen'
 import { Settings } from 'react-native'
 import { func } from 'prop-types';
 
