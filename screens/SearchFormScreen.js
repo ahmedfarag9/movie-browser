@@ -41,14 +41,12 @@ const styles = StyleSheet.create({
   
 
 export default class SearchFormScreen extends React.Component {
-	/*static navigationOpions = {
-		headerTitle: 'Search For a Movie',
-	}*/
 
 	state = {
 		showMovies: false,
 		movies: null,
-		movieNameTest: "MovieTest"
+	}
+
 	}
 
 	toggleMovies = () => {
