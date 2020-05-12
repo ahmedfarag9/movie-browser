@@ -1,9 +1,10 @@
 import React from 'react'
-import {Button, View, StyleSheet, Text} from 'react-native'
+import {Button, View, StyleSheet, Text, Image, ImageBackground} from 'react-native'
 import SearchForm from '../SearchForm'
 //import ScrollViewMovies from '../ScrollViewMovies'
 //import {fetchMovie} from '../api'
 import FlatListMovies from '../FlatListMovies'
+import {fetchMovieDetails} from '../api'
 
 //const renderItem = movie => <Text style={styles.text}>{movie.name} {movie.year}</Text>
 
