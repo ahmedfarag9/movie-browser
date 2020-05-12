@@ -21,6 +21,21 @@ const styles = StyleSheet.create({
 		paddingHorizontal: 50,
 		//paddingVertical: 5,
 	  },
+	image: {
+		position: 'absolute',
+		top: 0,
+		bottom: 0,
+		left: 0,
+		right: 0,
+		//width: 400,
+		//height: 300, 
+		justifyContent: 'center',
+		//alignItems: 'center',
+
+		width: null,
+        height: null,
+        resizeMode: 'cover'
+	  },    
 	  
   })
   
