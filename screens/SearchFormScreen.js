@@ -50,3 +50,10 @@ export default class SearchFormScreen extends React.Component {
 		movies: null,
 		movieNameTest: "MovieTest"
 	}
+
+	toggleMovies = () => {
+		//console.log(this.state.movies)		
+		this.setState({showMovies: true})
+
+	  }
+	
