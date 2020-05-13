@@ -47,8 +47,15 @@ export default class SearchFormScreen extends React.Component {
 		movies: null,
 	}
 
+
+	handleSelectMovie = async (movie) => {
+
+		const results = await fetchMovieDetails(movie.imdbID)
+		//console.log(results)
+		this.props.navigation.push('MovieDetails', results)
 	}
 
+	
 	toggleMovies = () => {
 		//console.log(this.state.movies)		
 		this.setState({showMovies: true})
