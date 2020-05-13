@@ -62,3 +62,9 @@ export default class SearchFormScreen extends React.Component {
 
 	  }
 	
+	handleSubmit = (movies) => {
+		//console.log("Test11111")
+		console.log(movies)
+		this.setState({movies: movies})
+		this.toggleMovies()
+	}
