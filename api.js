@@ -1,7 +1,9 @@
-const processMovie = movie => ({
+const processMovies = movie => ({
 	name: movie.Title,
-	//year: movie.Year,
-	picture: movie.picture
+	year: movie.Year,
+	picture: movie.Poster,
+	imdbID: movie.imdbID,
+	type: movie.Type,
 })
     name: movie.name,
     year: movie.year,
