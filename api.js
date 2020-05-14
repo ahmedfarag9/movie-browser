@@ -22,8 +22,18 @@ export const fetchMovies = async (movieName) => {
 
 
 
-export const fetchMovie = async () => {
-    const response = await fetch('URL')
-    const {results} = await response.json()
-    return results.map(processMovie)
+export const fetchMovieDetails = async (movieImdbID) => {
+
+
+
+
+
+	const response = await fetch(url)
+    const result = await response.json()
+
+	//const response = await fetch('http://www.omdbapi.com/?apikey=4e59c02d&r=json&s=Avengers')
+	//console.log(result)
+
+	return result
+	
 }
