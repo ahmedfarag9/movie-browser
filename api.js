@@ -5,10 +5,11 @@ const processMovies = movie => ({
 	imdbID: movie.imdbID,
 	type: movie.Type,
 })
-    name: movie.name,
-    year: movie.year,
-    picture: movie.picture
-})
+
+
+export const fetchMovies = async (movieName) => {
+
+    const movieNameTmp = "'" + movieName + "'"
 
 
 export const fetchMovie = async () => {
