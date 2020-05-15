@@ -21,6 +21,20 @@ const styles = StyleSheet.create({
         paddingVertical: 5,
         borderRadius: 3,
     },
+    image: {
+		position: 'absolute',
+		top: 0,
+		bottom: 0,
+		left: 0,
+		right: 0,
+		//width: 400,
+		//height: 300, 
+		justifyContent: 'center',
+		//alignItems: 'center',
+		width: null,
+        height: null,
+        resizeMode: 'cover'
+	  },    	  
 })
 
 export default class SearchForm extends React.Component{
