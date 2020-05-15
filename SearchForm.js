@@ -44,3 +44,21 @@ export default class SearchForm extends React.Component{
         movies: null,
         showMovies: false
     }
+
+    render () {
+        return (
+            <KeyboardAvoidingView behavior="padding" style={styles.container}>
+
+
+                <TextInput 
+                    style={styles.input}
+                    value={this.state.movieName}
+                    onChangeText={this.getHandler('movieName')}
+                    placeholder="Movie Name"
+                />
+                <Button title="Search" onPress={this.getMovies} disabled={!this.state.isFormValid} />
+
+            </KeyboardAvoidingView>
+        )
+    }
+}
