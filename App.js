@@ -25,6 +25,7 @@ function MyStack() {
     </MainStack.Navigator>
   );
 }
+
 const MainTabs = createBottomTabNavigator();
 
 function MyTabs() {
@@ -46,23 +47,12 @@ function MyTabs() {
 }
 
 
-
 export default class App extends React.Component {
 
 	state = {
 		movies: null,
 		movieName: " ",
 	}
-
-	/*componentDidMount() {
-		this.getMovies()
-	}
-
-	getMovies = async () => {
-		const results = await fetchMovie()
-		this.setState({movies: results})
-	}*/
-
 
   render() {
     return (
