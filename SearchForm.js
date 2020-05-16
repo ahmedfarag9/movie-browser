@@ -58,6 +58,12 @@ export default class SearchForm extends React.Component{
         this.setState({[key]: val})
     }
 
+    handleSubmit = () => {
+        //this.getMovies()
+        this.props.onSubmit(this.state.movies)    
+    }
+
+
     render () {
         return (
             <KeyboardAvoidingView behavior="padding" style={styles.container}>
