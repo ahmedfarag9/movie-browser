@@ -54,6 +54,10 @@ export default class SearchForm extends React.Component{
         }
     }
 
+    getHandler = key => val => {
+        this.setState({[key]: val})
+    }
+
     render () {
         return (
             <KeyboardAvoidingView behavior="padding" style={styles.container}>
