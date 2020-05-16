@@ -45,6 +45,15 @@ export default class SearchForm extends React.Component{
         showMovies: false
     }
 
+
+    componentDidUpdate(prevProps, prevState) {
+        if (this.state.movieName) {
+            if (this.state.movieName !== prevState.movieName ) {
+            this.validateForm()
+            }
+        }
+    }
+
     render () {
         return (
             <KeyboardAvoidingView behavior="padding" style={styles.container}>
