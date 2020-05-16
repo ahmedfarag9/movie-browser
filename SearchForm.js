@@ -58,6 +58,25 @@ export default class SearchForm extends React.Component{
         this.setState({[key]: val})
     }
 
+
+    validateForm = () => {
+        //console.log(this.state)
+        //const spacedmovieName = this.state.movieName.split(' ')
+        /*if (
+            spacedmovieName[0] &&
+            spacedmovieName[1] &&
+            
+        //if (this.state.movieName !== " ") {
+        this.setState({isFormValid: true})
+            //this.getMovies()
+ 
+        /*} else {
+            this.setState({isFormValid: false})        
+        }
+        }*/
+    }
+
+
     handleSubmit = () => {
         //this.getMovies()
         this.props.onSubmit(this.state.movies)    
