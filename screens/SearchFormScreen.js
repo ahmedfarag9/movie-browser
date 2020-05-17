@@ -68,3 +68,21 @@ export default class SearchFormScreen extends React.Component {
 		this.setState({movies: movies})
 		this.toggleMovies()
 	}
+
+
+	render() {
+		return (
+			
+		<View style={styles.container}>
+
+			<ImageBackground
+				source={{
+				uri: 'https://static.wixstatic.com/media/1d6090cc4bbf44628dfd82a1979770e8.jpg',
+				}}
+				style={styles.image}>
+			</ImageBackground>
+
+
+		</View>	
+		)}	
+}
