@@ -1,12 +1,8 @@
 import React from 'react'
 import {Button, View, StyleSheet, Text, Image, ImageBackground} from 'react-native'
 import SearchForm from '../SearchForm'
-//import ScrollViewMovies from '../ScrollViewMovies'
-//import {fetchMovie} from '../api'
 import FlatListMovies from '../FlatListMovies'
 import {fetchMovieDetails} from '../api'
-
-//const renderItem = movie => <Text style={styles.text}>{movie.name} {movie.year}</Text>
 
 
 const styles = StyleSheet.create({
@@ -31,12 +27,10 @@ const styles = StyleSheet.create({
 		//height: 300, 
 		justifyContent: 'center',
 		//alignItems: 'center',
-
 		width: null,
         height: null,
         resizeMode: 'cover'
 	  },    
-	  
   })
   
 
@@ -57,14 +51,12 @@ export default class SearchFormScreen extends React.Component {
 
 	
 	toggleMovies = () => {
-		//console.log(this.state.movies)		
 		this.setState({showMovies: true})
-
 	  }
 	
+	  
 	handleSubmit = (movies) => {
-		//console.log("Test11111")
-		console.log(movies)
+		//console.log(movies)
 		this.setState({movies: movies})
 		this.toggleMovies()
 	}
