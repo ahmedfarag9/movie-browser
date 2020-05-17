@@ -54,6 +54,15 @@ export default class SearchForm extends React.Component{
         }
     }
 
+
+	getMovies = async () => {
+		const results2 = await fetchMovies(this.state.movieName)
+		this.setState({movies: results2})
+		this.setState({showMovies: true})
+        this.handleSubmit()
+	}
+    
+
     getHandler = key => val => {
         this.setState({[key]: val})
     }
