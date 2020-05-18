@@ -1,5 +1,7 @@
 import React from 'react'
-import {Button, View, StyleSheet, Text, Image, TouchableOpacity } from 'react-native'
+import {Button, View, StyleSheet, Text, Image, TouchableOpacity, ImageBackground } from 'react-native'
+import { ScrollView } from 'react-native-gesture-handler'
+
 const styles = StyleSheet.create({
     container: {
       //justifyContent: 'center',
