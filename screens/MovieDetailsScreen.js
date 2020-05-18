@@ -8,14 +8,26 @@ const styles = StyleSheet.create({
       flex: 1,
       //marginTop: 20,
       //marginHorizontal: 50,
-      paddingHorizontal: 10,
       //paddingVertical: 5,
     },
     text: {
+		paddingHorizontal: 20,
+		fontSize: 21 
       //textAlign: 'center',
     },
     image: {
-      
+		position: 'absolute',
+		top: 0,
+		bottom: 0,
+		left: 0,
+		right: 0,
+		width: 500,
+		height: 1000, 
+		justifyContent: 'center',
+		alignItems: 'center',
+		//width: null,
+		//height: null,
+		//resizeMode: 'cover'
     },    
   })
   
