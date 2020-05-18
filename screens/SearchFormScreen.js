@@ -74,7 +74,14 @@ export default class SearchFormScreen extends React.Component {
 				style={styles.image}>
 			</ImageBackground>
 
-
+			<SearchForm onSubmit={this.handleSubmit}/>
+				{this.state.showMovies && (
+					<FlatListMovies
+						style={styles.text}
+						movies = {this.state.movies}
+						onSelectMovie = {this.handleSelectMovie}
+					/>
+				)}
 		</View>	
 		)}	
 }
