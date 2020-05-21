@@ -4,6 +4,7 @@ import propTypes from 'prop-types'
 
 import Row from './Row'
 
+
 const FlatListMovies = props => {
 
   const tmpProp = props.onSelectMovie
@@ -15,3 +16,9 @@ const FlatListMovies = props => {
     <FlatList renderItem={({item}) => <Row {...item} onSelectMovie={tmpProp} />} data={tmpMovies}  keyExtractor={item => item.imdbID}/>
   )
 }
+
+FlatListMovies.propTypes = {
+  contacts: propTypes.array,
+}
+
+export default FlatListMovies
