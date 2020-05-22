@@ -22,3 +22,8 @@ const Row = props => (
 	</TouchableOpacity>
 )
 
+Row.propTypes = {
+	movieName: propTypes.string
+}
+
+export default Row
