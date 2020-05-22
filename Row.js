@@ -15,3 +15,10 @@ const styles = StyleSheet.create({
 	//paddingVertical: 5,
 	//borderRadius: 3,
 })
+
+const Row = props => (
+	<TouchableOpacity style={styles.row} onPress={() => props.onSelectMovie(props)}>
+		<Text key = {props.name}> {props.name} : {props.year}</Text>
+	</TouchableOpacity>
+)
+
