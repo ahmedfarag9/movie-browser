@@ -10,6 +10,7 @@ const processMovies = movie => ({
 export const fetchMovies = async (movieName) => {
 
     const movieNameTmp = "'" + movieName + "'"
+	const url = 'http://www.omdbapi.com/?r=json&s=' + movieNameTmp
 
 
 	const response = await fetch(url)
@@ -26,7 +27,7 @@ export const fetchMovieDetails = async (movieImdbID) => {
 
 
 
-
+	const url = 'http://www.omdbapi.com/?plot=full&r=json&i=' + movieImdbID
 
 	const response = await fetch(url)
     const result = await response.json()
