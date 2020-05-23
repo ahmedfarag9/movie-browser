@@ -81,3 +81,24 @@ export default class MovieDetailsScreen extends React.Component {
     });
 }
 
+
+  render() {
+    
+    return (
+      <ScrollView style={styles.container}>
+
+        {this.state.showMovie && (
+          <Image
+            source={{
+              uri: this.state.movie.Poster,
+            }}
+            style={styles.image}>
+          </Image>
+        )}
+        
+        <Text>{this.state.showMovie && renderItem(this.state.movie)}</Text>
+         
+      </ScrollView>
+    )
+  }
+}
