@@ -2,6 +2,38 @@ import React from 'react'
 import {Button, View, StyleSheet, Text, Image, TouchableOpacity, ImageBackground } from 'react-native'
 import { ScrollView } from 'react-native-gesture-handler'
 
+
+const renderItem = element =>
+
+    <Text style={styles.text}>
+
+        Title: {element.Title} {'\n'}
+        {element.Ratings[0].Source} : {element.Ratings[0].Value} {'\n'}
+        {element.Ratings[1].Source} : {element.Ratings[1].Value} {'\n'}
+        {element.Ratings[2].Source} : {element.Ratings[2].Value} {'\n'}
+        Actors: {element.Actors} {'\n'}
+        BoxOffice: {element.BoxOffice} {'\n'}
+        Awards: {element.Awards} {'\n'}
+        Country: {element.Country} {'\n'}
+        Director: {element.Director} {'\n'}
+        Genre: {element.Genre} {'\n'}
+        imdbID: {element.imdbID} {'\n'}
+        imdbRating: {element.imdbRating} {'\n'}
+        imdbVotes: {element.imdbVotes} {'\n'}
+        Language: {element.Language} {'\n'}
+        Metascore: {element.Metascore} {'\n'}
+        Plot: {element.Plot} {'\n'}
+        Production: {element.Production} {'\n'}
+        Rated: {element.Rated} {'\n'}
+        Released: {element.Released} {'\n'}
+        Type: {element.Type} {'\n'}
+        Website: {element.Website} {'\n'}
+        Writer: {element.Writer} {'\n'}
+        Year: {element.Year} {'\n'}
+
+    </Text>
+
+
 const styles = StyleSheet.create({
     container: {
       //justifyContent: 'center',
