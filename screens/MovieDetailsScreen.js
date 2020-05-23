@@ -38,3 +38,14 @@ export default class MovieDetailsScreen extends React.Component {
     movie: null,
     showMovie: false,
   }
+
+  componentDidMount() {
+    const movie = this.props.route.params
+    //console.log(movie)
+    //const tmp = route.params?.data ?? 'defaultValue';
+    this.setState({
+		movie: movie,
+		showMovie: true
+    });
+}
+
