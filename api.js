@@ -7,10 +7,14 @@ const processMovies = movie => ({
 })
 
 
+
 export const fetchMovies = async (movieName) => {
 
     const movieNameTmp = "'" + movieName + "'"
-	const url = 'http://www.omdbapi.com/?r=json&s=' + movieNameTmp
+
+	const MyApiKey = '000abc'      // insert your Api key in here
+
+	const url = 'http://www.omdbapi.com/?apikey=' + MyApiKey + '&r=json&s=' + movieNameTmp
 
 
 	const response = await fetch(url)
@@ -26,8 +30,11 @@ export const fetchMovies = async (movieName) => {
 export const fetchMovieDetails = async (movieImdbID) => {
 
 
+	const MyApiKey = '000abc'      // insert your Api key in here
 
-	const url = 'http://www.omdbapi.com/?plot=full&r=json&i=' + movieImdbID
+
+
+	const url = 'http://www.omdbapi.com/?apikey=' + MyApiKey + '&plot=full&r=json&i=' + movieImdbID
 
 	const response = await fetch(url)
     const result = await response.json()
