@@ -36,16 +36,16 @@ const renderItem = element =>
 
 const styles = StyleSheet.create({
     container: {
-      //justifyContent: 'center',
-      flex: 1,
-      //marginTop: 20,
-      //marginHorizontal: 50,
-      //paddingVertical: 5,
+		//justifyContent: 'center',
+		flex: 1,
+		//marginTop: 20,
+		//marginHorizontal: 50,
+		//paddingVertical: 5,
     },
     text: {
 		paddingHorizontal: 20,
 		fontSize: 21 
-      //textAlign: 'center',
+		//textAlign: 'center',
     },
     image: {
 		position: 'absolute',
