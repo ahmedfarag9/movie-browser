@@ -1,4 +1,5 @@
 # movie-browser
+====================
 
 A React-Native mobile application that enables you to search for a movie and get info about it.
 
